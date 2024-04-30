@@ -1,0 +1,1 @@
+docker run --name Nginx -p 80:80 -v D:/code/chatgpt/dev-ops/nginx/logs:/var/log/nginx -v D:/code/chatgpt/dev-ops/nginx/html:/usr/share/nginx/html -v D:/code/chatgpt/dev-ops/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v D:/code/chatgpt/dev-ops/nginx/conf/conf.d:/etc/nginx/conf.d -v D:/code/chatgpt/dev-ops/nginx/ssl:/etc/nginx/ssl/ --privileged=true -d --restart=always nginx
